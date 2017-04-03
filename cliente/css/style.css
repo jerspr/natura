@@ -105,9 +105,22 @@ body{font-family: 'Open Sans', sans-serif;font-size: 14px;background: #ebebeb;}
 .btn-save-f:hover,.btn-save-f:focus,.btn-save-f:active{background: #f2821b;color: #fff;opacity: 0.9;}
 .cnt-table-filter h2{font-size: 22px;color: #d9812b;margin-bottom: 20px;}
 .cnt-table-filter h2 span{font-size: 13px;color: #666;}
+.filter-b{margin-bottom: 30px;}
 .filter-b ul>li{color: #666666;font-size: 12px;float: left;margin-right: 8px;}
 .filter-b ul>li:first-child{line-height: 34px;}
 .filter-b .dropdown-menu>.active>a, .filter-b .dropdown-menu>.active>a:focus, .filter-b .dropdown-menu>.active>a:hover{color: #7A7A7A;font-size: 14px;background: transparent;}
 .filter-b .btn-group>button{text-align: left;border:2px solid #dbdbdb;border-radius: 7px;}
 .btn-search{height: 34px;line-height: 34px;padding: 0 22px;font-weight: 700;font-size: 14px;color: #fff;background: #f2821b;border-radius: 7px;}
 .btn-search:focus,.btn-search:hover,.btn-search:active{color: #fff;opacity: 0.9;background: #f2821b;}
+.b-list-pag .left ul li{margin-left: 45px;float: left;}
+.b-list-pag .left ul li:first-child{margin-left: 0;}
+.b-list-pag .left ul li a{display: block;line-height: 36px;font-size: 13px;color: #6686a3;font-weight: 700;}
+.e-excel span{width: 36px;height: 36px;display: inline-block;background: url(../img/e-excel.png) no-repeat;margin-right: 8px;vertical-align: middle;}
+.e-mail span{width: 36px;height: 36px;display: inline-block;background: url(../img/e-mail.png) no-repeat;margin-right: 8px;vertical-align: middle;}
+.b-list-pag .right ul{margin-top: 0;margin-bottom: 0;}
+.b-list-pag .pagination{margin-right: 100px;}
+.b-list-pag .pagination>li>a, .b-list-pag .pagination>li>span{color: #6686a3;font-size: 16px;font-weight: 700;border:0;padding: 6px;}
+.b-list-pag .pagination>li>a:focus, .b-list-pag .pagination>li>a:hover, .b-list-pag .pagination>li>span:focus, .b-list-pag .pagination>li>span:hover{background: transparent;}
+.b-list-pag .pagination>.disabled>a, .b-list-pag .pagination>.disabled>a:focus, .b-list-pag .pagination>.disabled>a:hover, .b-list-pag .pagination>.disabled>span, .b-list-pag .pagination>.disabled>span:focus, .b-list-pag .pagination>.disabled>span:hover{color: #ccc;}
+.b-list-pag .pagination>.disabled>a:focus, .b-list-pag .pagination>.disabled>a:hover, .b-list-pag .pagination>.disabled>span, .b-list-pag .pagination>.disabled>span:focus, .b-list-pag .pagination>.disabled>span:hover{background: transparent;}
+.b-list-pag .pagination>.active>a, .b-list-pag .pagination>.active>a:focus, .b-list-pag .pagination>.active>a:hover, .b-list-pag .pagination>.active>span, .b-list-pag .pagination>.active>span:focus, .b-list-pag .pagination>.active>span:hover{color: #000;background: transparent;}
