@@ -124,3 +124,6 @@ body{font-family: 'Open Sans', sans-serif;font-size: 14px;background: #ebebeb;}
 .b-list-pag .pagination>.disabled>a, .b-list-pag .pagination>.disabled>a:focus, .b-list-pag .pagination>.disabled>a:hover, .b-list-pag .pagination>.disabled>span, .b-list-pag .pagination>.disabled>span:focus, .b-list-pag .pagination>.disabled>span:hover{color: #ccc;}
 .b-list-pag .pagination>.disabled>a:focus, .b-list-pag .pagination>.disabled>a:hover, .b-list-pag .pagination>.disabled>span, .b-list-pag .pagination>.disabled>span:focus, .b-list-pag .pagination>.disabled>span:hover{background: transparent;}
 .b-list-pag .pagination>.active>a, .b-list-pag .pagination>.active>a:focus, .b-list-pag .pagination>.active>a:hover, .b-list-pag .pagination>.active>span, .b-list-pag .pagination>.active>span:focus, .b-list-pag .pagination>.active>span:hover{color: #000;background: transparent;}
+.hiddenRow{padding: 0 !important;}
+.list-img-v a{display: none;}
+.list-img-v a:first-child{display: block;}
