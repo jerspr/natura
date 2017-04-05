@@ -127,3 +127,30 @@ body{font-family: 'Open Sans', sans-serif;font-size: 14px;background: #ebebeb;}
 .hiddenRow{padding: 0 !important;}
 .list-img-v a{display: none;}
 .list-img-v a:first-child{display: block;}
+.table-custom-n{border-top: 5px solid #d9812b;border-bottom: 1px solid #ddd;}
+.table-custom-n thead tr{background: #ebebeb;}
+.table-custom-n thead tr th{font-size: 16px;color: #d9812b;font-weight: 400;padding: 5px 10px;border-bottom: 0;}
+.table-custom-n tbody tr>td{color: #666;font-size: 16px;font-weight: 400;padding: 15px 10px;}
+.table-custom-n tbody tr>td>a{display: block;}
+.table-custom-n tbody tr>td.hiddenRow{border-top: 0;}
+.table-custom-n tbody tr>td>a>span{color: #000;font-size: 25px;vertical-align: middle;}
+.cnt-int-c{padding: 20px;background: #f3f3f3;}
+.cnt-int-c .nav-tabs{border-bottom: 5px solid #d9812b;}
+.cnt-int-c .nav-tabs>li{margin-bottom: 0;}
+.cnt-int-c .nav-tabs>li>a{padding: 5px 15px;font-size: 14px;color: #fff;font-weight: 600;background: #b0b0b0;margin-right: 0;border:0;border-radius: 8px 8px 0 0;}
+.cnt-int-c .nav-tabs>li.active>a{background: #d9812b;}
+.cnt-int-c .nav-tabs>li.active>a:focus, .cnt-int-c .nav-tabs>li.active>a:hover{border:0;color: #fff;}
+.table-tab-b{background: transparent!important;border-bottom: 2px solid #c0c0c0;padding: 10px 0;}
+.table-tab-b tr td{border-top: 0!important;padding: 10px!important;}
+.table-tab-f{background: transparent!important;}
+.m-form-n h2{margin-bottom: 25px;margin-top: 0;font-size: 22px;color: #d9812b;}
+.modal-custom-n .modal-body{padding: 35px;}
+.m-form-n .form-group>label{text-align: left;padding-top: 0;font-size: 13px;color: #666666;font-weight: 400;}
+.m-form-n input, .m-form-n select, .m-form-n textarea{border: 2px solid #dbdbdb;border-radius: 7px;color: #666;font-size: 13px;}
+.m-form-n .form-group{margin-bottom: 12px;}
+.btn-mC{height: 30px;line-height: 30px;padding: 0 25px;font-size: 13px;color: #fff;font-weight: 700;border-radius: 7px;}
+.btn-grabar{background: #d9812b;}
+.btn-cancelar{background: #999;}
+.m-form-n .form-group:last-child{margin-bottom: 0;}
+.btn-mC:hover, .btn-mC:focus, .btn-mC:active{color: #fff;opacity: 0.9;}
+.table-tab-f thead tr{background: #fff;}
