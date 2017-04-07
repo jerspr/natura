@@ -1,8 +1,18 @@
 var obj = {
 	init: function(){
+        $('.nav-header .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+        });
+        /*Filtro de cliente*/
 		if($("#filterS").length>0){
 			obj.filterSearch();
 		}
+        /*Filtro de Usario GV*/
+        if($("#filterS").length>0){
+            obj.gvFilterSearch();
+        }
         if($("#tableCN").length>0){
             obj.nTable();
         }
@@ -24,6 +34,28 @@ var obj = {
             buttonWidth: '178px'
         });
 	},
+    gvFilterSearch: function(){
+        $('#gvfCodigo').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Código',
+            buttonWidth: '118px'
+        });
+        $('#gvSector').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Código CNO',
+            buttonWidth: '118px'
+        });
+        $('#gvcCNO').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Código CNO',
+            buttonWidth: '118px'
+        });
+        $('#gvSituacion').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Situación',
+            buttonWidth: '118px'
+        });
+    },
     nTable: function(){
         $('.collapse').on('show.bs.collapse', function () {
             $('.collapse.in').collapse('hide');
@@ -47,6 +79,7 @@ var obj = {
         });
     },
     nDonut: function(){
+        console.log("hik");
         /*new Chartist.Pie('.ct-chart', {
             labels: ['Piece A', 'Piece B', 'Piece C', 'Piece D'],
             series: [75, 5, 8, 15]
