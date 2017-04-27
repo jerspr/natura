@@ -12,10 +12,14 @@ var obj = {
         /*Filtro de Usario GV*/
         if($("#filterS").length>0){
             obj.gvFilterSearch();
+            obj.grFilterSearch();
+            obj.adFilterSearch();
         }
         if($("#tableCN").length>0){
             obj.nTable();
         }
+        /**/
+        obj.menuMovil();
 	},
 	filterSearch: function(){
 		$('#fCodigo').multiselect({
@@ -42,7 +46,7 @@ var obj = {
         });
         $('#gvSector').multiselect({
             includeSelectAllOption: true,
-            nonSelectedText: 'Código CNO',
+            nonSelectedText: 'Sector',
             buttonWidth: '118px'
         });
         $('#gvcCNO').multiselect({
@@ -54,6 +58,75 @@ var obj = {
             includeSelectAllOption: true,
             nonSelectedText: 'Situación',
             buttonWidth: '118px'
+        });
+    },
+    grFilterSearch: function(){
+        $('#eInicial').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Estado',
+            buttonWidth: '128px'
+        });
+        $('#grcCNO').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Código CNO',
+            buttonWidth: '118px'
+        });
+        $('#grCiclo').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Ciclo',
+            buttonWidth: '118px'
+        });
+    },
+    adFilterSearch: function(){
+        $('#adCiclo').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Ciclo',
+            buttonWidth: '108px'
+        });
+        $('#adEIn').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Estado inicial',
+            buttonWidth: '108px'
+        });
+        $('#adCodigo').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Ciclo', //modificacion
+            buttonWidth: '118px'
+        });
+        $('#adCNO').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Código CNO',
+            buttonWidth: '98px'
+        });
+        $('#adGerencia').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Gerencia',
+            buttonWidth: '98px'
+        });
+        $('#adSector').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Sector',
+            buttonWidth: '118px'
+        });
+        $('#adFecha').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Fecha',
+            buttonWidth: '118px'
+        });
+        $('#adSituacion').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Fecha',
+            buttonWidth: '118px'
+        });
+        $('#adEstInicial').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Estado inicial',
+            buttonWidth: '125px'
+        });
+        $('#adEstFinal').multiselect({
+            includeSelectAllOption: true,
+            nonSelectedText: 'Estado final',
+            buttonWidth: '125px'
         });
     },
     nTable: function(){
@@ -77,6 +150,9 @@ var obj = {
                 }
             }
         });
+    },
+    menuMovil: function(){
+        $('.drawer').drawer();
     },
     nDonut: function(){
         console.log("hik");
